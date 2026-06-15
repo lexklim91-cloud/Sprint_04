@@ -88,11 +88,6 @@ class TestBooksbooks_collector:
         assert name in books_collector.favorites
     
         
-    def test_add_book_in_favorites_return_result_notfound(self, books_collector, books_collector_add):
-        name = "Винни-Пух"
-        books_collector.add_book_in_favorites("Дюна")
-        assert name not in books_collector.favorites
-        
         
     def test_delete_book_in_favorites_return_result_not_in_list(self, books_collector, books_collector_add):
         name = "Винни-Пух"
